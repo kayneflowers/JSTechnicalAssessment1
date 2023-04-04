@@ -1,133 +1,83 @@
 console.log("connected");
 
-// //Coding Exam No. 1
-// let intro = "Hello World!"
-// console.log(intro);
-
-// function myIntro() 
-// {
-//     console.log("Hello World!"); 
-// }
-// myIntro();
-
-
-// let person = 
-// {
-//     firstName: "John",
-//     lastName: "Smith",
-//     age: 30,    
-//     hobbies: ["Biking", "Mountain Climbing", "Swimming"]
-// }
-
-// otherHobbies = ["eating,sleeping,bingewatching"]
-// const city = "Lincoln";
-// const houseNumber = 32;
-// const state = "Nebraska";
-// const street = "Washington";
-
-// console.log(`First Name: ${person.firstName}`
-// +"                                  "+ 
-// `Last Name: ${person.lastName}`
-// +"                                               "+
-// `Age: ${person.age}`
-// +"                                                    "+
-// `Hobbies:'${person.hobbies}`
-// +"                                                       "+
-// `Work Address:` +"                                                       "+ `city: ${city}` 
-// +"                                                 "+ 
-// `house Number ${houseNumber}` 
-// +"                                      "+ 
-// `state:${state}` 
-// +"                                              "+ 
-// `street: ${street}`);
-
-// console.log(`${person.firstName} ${person.lastName} is ${person.age} years of age`);
-
-// function info(otherHobbies){
-//     console.log(`His hobbies are: ${otherHobbies}`)
-// }
-// info(otherHobbies);
-
-
-// // function showAddress(adress){
-// //     console.log(city (city) + " ");
-// // }
-// // showAddress(adress);
-
-
-// let text = "";
-// let j = 1;
-
-// for (j;j<8; j++ )
-// {
-//     if (j === 2 || j === 3) continue;
-//     console.log(text += j)
-// }
-
-// console.log("Answer 1");
+//Coding Exam No. 1
 console.log("Hello World!");
+
 let firstName = "Kaye Regine";
 let lastName = "Flores";
 let age = "26";
 let hobbies = ["Travelling","Listening Music","Watching Movies & Series"];
-let otherHobbies = ["eating","dancing","drawing"]
+
 const city = "Cebu City";
 const houseNumber = "3";
 const state = "Philippines";
 const street = "Kamya";
 
-function userInformation(firstName,lastName,age,hobbies,city,houseNumber,state,street,relationShipStatus = false){
-    let userInformation = [];
-    userInformation['First Name'] = firstName
-    userInformation["Last Name"] = lastName
-    userInformation["Age"] = age
-    userInformation["Hobbies"] = hobbies
-    userInformation["City"] = city
-    userInformation["house Number"] = houseNumber
-    userInformation["state"] = state
-    userInformation["street"] = street
-    let uIStr = [];
-    uIStr+= `First Name: ${firstName}\n`;
-    uIStr+= `Last Name: ${lastName}\n`;
-    uIStr+= `Age: ${age}\n`;
-    uIStr+= `Hobbies: ${hobbies}\n`;
-    uIStr+= `City: ${city}\n`;
-    uIStr+= `house Number: ${houseNumber}\n`;
-    uIStr+= `state: ${state}\n`;
-    uIStr+= `street: ${street}`;
-    console.log(userInformation);
-    console.log(firstName+" "+lastName+" is "+age+" years of age");
-    console.log("My hobbies are: "+otherHobbies.join(", "));
-    console.log("city: "+city);
-    console.log("house number: "+houseNumber);
-    console.log("state: "+state);
-    console.log("street "+street);
-
-    console.log("The value of isMarried is:");
-    console.log(relationShipStatus);
-
+function userInfo(firstName,lastName,age,hobbies,city,houseNumber,state,street){
+    let userInfo = [];
+    userInfo["First Name"] = firstName
+    userInfo["Last Name"] = lastName
+    userInfo["age"] = age
+    userInfo["hobbies"] = hobbies
+    userInfo["city"] = city
+    userInfo["house Number"] = houseNumber
+    userInfo["state"] = state
+    userInfo["street"] = street
+    let userInformation = `First Name: ${firstName}`;
+    userInformation = `Last Name: ${lastName}`;
+    userInformation = `age: ${age}`;
+    userInformation = `hobbies: ${hobbies}`;
+    userInformation = `city: ${city}`;
+    userInformation = `house Number ${houseNumber}`;
+    userInformation = `state: ${state}`;
+    userInformation = `street: ${street}`;
+    console.log(userInfo);
 }
 
-userInformation(firstName,lastName,age,hobbies,city,houseNumber,state,street)
+userInfo(firstName,lastName,age,hobbies,city,houseNumber,state,street);
+
+console.log(firstName+" "+lastName+" is "+age+" years of age");
+
+function otherHobbies(){
+    let otherHobbies = ["eating","dancing","drawing"]
+    console.log("My other hobbies are: "+otherHobbies.join(", "));
+}
+otherHobbies();
+
+function workingAddress(city,houseNumber,state,street){
+    console.log(`Working Address:`);
+    console.log(`city : ${city}`);
+    console.log(`house Number : ${houseNumber}`)
+    console.log(`state : ${state}`)
+    console.log(`street  ${street}`)
+}
+workingAddress(city,houseNumber,state,street);
+
+console.log("The value of isMarried is:");
+
+function relationhipStatus(Status = false){
+    console.log(Status);
+}
+relationhipStatus();
 
 //Coding Exam No. 2
-// let a = 10;
-// let b = 8;
+let a = 10;
+let b = 8;
 
-// console.log(a += b); //18
-// console.log(a -= b); //10
-// console.log(a *= b); //80
-// console.log(a /= b); //10
-// console.log(b += a); //18
-// console.log(b -= a); //8
-// console.log(b *= a); //80
-// console.log(b /= a); //8
-// console.log(a <= b); //false
-// console.log(a >= b); //true
-// console.log(b <= a); //true
-// console.log(b >= a); //false
-// console.log(a !== b); //true
-// console.log(b !== a); //true
+console.log(a += b); //18
+console.log(a -= b); //10
+console.log(a *= b); //80
+console.log(a /= b); //10
+console.log(b += a); //18
+console.log(b -= a); //8
+console.log(b *= a); //80
+console.log(b /= a); //8
+console.log(a <= b); //false
+console.log(a >= b); //true
+console.log(b <= a); //true
+console.log(b >= a); //false
+console.log(a !== b); //true
+console.log(b !== a); //true
 
 //Coding Exam No. 3
 // let colorInput = prompt("Enter a color: ");
@@ -183,31 +133,24 @@ userInformation(firstName,lastName,age,hobbies,city,houseNumber,state,street)
 
 // console.log(oddOrEven(userInput));
 
-
-// console.log("\n\n\n");
-// console.log("Answer 5");
-
-function countEvenNumbers(num=20) {
-    let userInput = prompt("Enter a number:");
-    if (isNaN(num) || num < 0 || num > 20) {
-      console.log("Invalid input, please enter a number between 0 and 20.");
-      return;
-    }
-    for (let i = num; i >= 0; i--) {
-      if (i % 2 === 0) {
-        console.log(i);
-      }
-    }
-  }
-console.log("part 1");
-countEvenNumbers();
+//Coding Exam No. 5
+// function countEvenNumbers(num=20) {
+//     if (isNaN(num) || num < 0 || num > 20) {
+//       console.log("Invalid input, please enter a number between 0 and 20.");
+//       return;
+//     }
+//     for (let i = num; i >= 0; i--) {
+//       if (i % 2 === 0) {
+//         console.log(i);
+//       }
+//     }
+//   }
+// countEvenNumbers();
 
 // userInput = parseInt(prompt("Enter a number between 0 and 20:"));
-// console.log("part 2");
 // countEvenNumbers(userInput);
 
-// console.log("\n\n\n");
-// console.log("Answer 6");
+//Coding Exam No. 6
 
 // function checkNumber() {
 //     let number = prompt("Enter a number:");
