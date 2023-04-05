@@ -23,17 +23,16 @@ function userInfo(firstName,lastName,age,hobbies,city,houseNumber,state,street){
     userInfo["house Number"] = houseNumber
     userInfo["state"] = state
     userInfo["street"] = street
-    let userInformation = `First Name: ${firstName}`;
-    userInformation = `Last Name: ${lastName}`;
-    userInformation = `age: ${age}`;
-    userInformation = `hobbies: ${hobbies}`;
-    userInformation = `city: ${city}`;
-    userInformation = `house Number ${houseNumber}`;
-    userInformation = `state: ${state}`;
-    userInformation = `street: ${street}`;
+    userInformation = `${firstName}`;
+    userInformation = `${lastName}`;
+    userInformation = `${age}`;
+    userInformation = `${hobbies}`;
+    userInformation = `${city}`;
+    userInformation = `${houseNumber}`;
+    userInformation = `${state}`;
+    userInformation = `${street}`;
     console.log(userInfo);
 }
-
 userInfo(firstName,lastName,age,hobbies,city,houseNumber,state,street);
 
 console.log(firstName+" "+lastName+" is "+age+" years of age");
@@ -45,11 +44,16 @@ function otherHobbies(){
 otherHobbies();
 
 function workingAddress(city,houseNumber,state,street){
-    console.log(`Working Address:`);
-    console.log(`city : ${city}`);
-    console.log(`house Number : ${houseNumber}`)
-    console.log(`state : ${state}`)
-    console.log(`street  ${street}`)
+    let userInfo = [];
+    userInfo["city"] = city
+    userInfo["house number"] = houseNumber
+    userInfo["state"] = state
+    userInfo["street"] = street
+    let userInformation = `city ${city}`;
+    userInformation = `house number ${houseNumber}`;
+    userInformation = `state ${state}`;
+    userInformation = `street ${street}`;
+    console.log(userInfo);
 }
 workingAddress(city,houseNumber,state,street);
 
