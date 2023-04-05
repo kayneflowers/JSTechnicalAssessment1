@@ -156,14 +156,13 @@ console.log(b !== a); //true
 
 //     for (;number >= 50; number--) {
 //         if (number % 10 === 0) {
-//             console.log(number + "is divisible by 10. Skipping...");
+//             console.log(`The number is divisible by 10. Skipping the number`);
 //             continue;
 //         }
 //         if (number % 5 === 0) {
-//             console.log(number + " is divisible by 5.");
+//             console.log(`${number}`);
 //         }
 //     }
-
 //     console.log(`Currently at number ${number}. Terminating the loop.`);
 // }
 // checkNumber();
