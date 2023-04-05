@@ -151,13 +151,12 @@ console.log(b !== a); //true
 // countEven(userInput);
 
 //Coding Exam No. 6
-
 // function checkNumber() {
 //     let number = prompt("Enter a number:");
 
-//     for (;number >= 50;number--) {
+//     for (;number >= 50; number--) {
 //         if (number % 10 === 0) {
-//             console.log(number + " is divisible by 10. Skipping...");
+//             console.log(number + "is divisible by 10. Skipping...");
 //             continue;
 //         }
 //         if (number % 5 === 0) {
@@ -165,9 +164,10 @@ console.log(b !== a); //true
 //         }
 //     }
 
-//     console.log("Loop terminated.");
+//     console.log(`Currently at number ${number}. Terminating the loop.`);
 // }
 // checkNumber();
+
 
 //Coding Exam No. 7
 // function loginAttempts() {
