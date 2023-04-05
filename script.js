@@ -134,21 +134,21 @@ console.log(b !== a); //true
 // console.log(oddOrEven(userInput));
 
 //Coding Exam No. 5
-// function countEvenNumbers(num=20) {
-//     if (isNaN(num) || num < 0 || num > 20) {
-//       console.log("Invalid input, please enter a number between 0 and 20.");
+// let userInput = prompt ("Enter a number between 0 to 20:");
+
+// function countEven(num=20) {  
+//     if (isNaN(num) || num < 0 || num > 20) 
+//     {
+//       alert("Invalid input, please enter a number between 0 and 20.");
 //       return;
 //     }
-//     for (let i = num; i >= 0; i--) {
-//       if (i % 2 === 0) {
-//         console.log(i);
+//     for (let n = num; n >= 0; n--) {
+//       if (n % 2 === 0) {
+//         console.log(n);
 //       }
 //     }
-//   }
-// countEvenNumbers();
-
-// userInput = parseInt(prompt("Enter a number between 0 and 20:"));
-// countEvenNumbers(userInput);
+// }
+// countEven(userInput);
 
 //Coding Exam No. 6
 
